@@ -1,0 +1,12 @@
+scalar LocalDateTime
+
+type Query {
+	timeboxes: [Timebox]
+}
+
+type Timebox {
+	id: ID!
+	description: String
+	start: LocalDateTime
+	end: LocalDateTime
+}
